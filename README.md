@@ -1,3 +1,4 @@
+```
 quest system_warp_map_coffee begin
     state start begin
         when 9012.click or 40002.use begin
@@ -61,3 +62,4 @@ quest system_warp_map_coffee begin
 		end
 	end
 end
+```
