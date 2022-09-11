@@ -2,7 +2,7 @@ quest system_warp_map_coffee begin
     state start begin
         when 9012.click or 40002.use begin
 			minHp = 15000
-			if pc.get_hp() < minHp then syschat(string.format("[System]:Sorry, you can't navigate because the blood level is less than %s thousand",math.floor(minHp/1000))) setskin(NOWINDOW) return end
+			if pc.get_hp() < minHp then syschat(string.format("[System]:Sorry, you can't navigate because the blood level is less than %s thousand",math.floor(minHp/1000))) setskin(NOWINDOW) return end -- Convert it to a comment if your server is fully PVP
 			local index = 0
 			local saveNameListMaps = {}
 			local listMaps = {
